@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collaborate</title>
+    <link rel="icon" href="images/daftpunktocat-guy.gif">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">About Github</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">The Octocat</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="createRepository.html">Exercise 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="undoChanges.html">Exercise 2</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Exercise 3<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container marketing">
+
+    <div class="jumbotron">
+        <h1>Collaborate</h1>
+        <p class="lead">In this exercise you're going to collaborate with a partner using GitHub. You'll both
+        work on the same project and see what happens if your changes conflict</p>
+    </div>
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Add a collaborator to your repository</h2>
+            <p class="lead">
+                If you want to work together with someone on a project you will need to add them as a collaborator.
+                By default, only you can make changes to repositories you own. By adding a collaborator you're allowing
+                somebody else to <strong>push</strong> to the repository. You can only add collaborators to your
+                repositories in the online web-based version of GitHub.
+            </p>
+            <ol>
+                <li>
+                    Find somebody to pair up with. Each of you will add the other to your GitHub repositories
+                </li>
+                <li>
+                    Go to your online GitHub account and select the repository that you want to add
+                    a collaborator to.</li>
+                <li>
+                    Now click on the <em>settings</em> tab for the repository and then click on the
+                    <em>collaborators</em> tab.
+                </li>
+                <li>
+                    Search for the username of the person you want to add to your repository, once
+                    you have found the person click on <em>add as collaborator</em>
+                </li>
+                <li>
+                    This will send an invitation email to your collaborator's address. Ask them to check their email and
+                    accept.
+                </li>
+            </ol>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="images/inviteCollaborator.png" alt="The Invite Collaborators Screen" style="width: 500px;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 push-md-5">
+            <h2 class="featurette-heading">Cloning a workspace</h2>
+            <p class="lead">
+                We've already looked at how to create a new repository from scratch. But what about when someone adds
+                us to a project. The repository is already there; we just want to create a new workspace. In GitHub
+                this is known as <strong>cloning</strong> a repository.
+            </p>
+            <ol>
+                <li>
+                    Once you've accepted the invitation, open up GitHub Desktop app.
+                </li>
+                <li>
+                    Go to <em>File -> CLone Repository...</em>
+                </li>
+                <li>
+                    If the new repository doesn't show up in the list you may need to fully close and re-open the
+                    GitHub desktop app.
+                </li>
+                <li>
+                    Choose the repository you want to clone and take note of the <em>Local Path</em>. This is where
+                    you'll find the new workspace on your computer.
+                </li>
+                <li>
+                    Make a change to this repository, commit and push. Ask the repository owner to sync their workspace.
+                    Make sure they can see your changes.
+                </li>
+            </ol>
+        </div>
+        <div class="col-md-5 pull-md-7">
+            <img class="featurette-image img-fluid mx-auto" src="images/cloneRepository.png"
+                 alt="Cloning a repository in GitHub Desktop" style="width: 500px;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+    <div class="row featurette">
+        <div class="col-md-7 push-md-5">
+            <h2 class="featurette-heading">Set up a conflict scenario</h2>
+            <p class="lead">
+                Conflicts arise when you have multiple parties adding code to a shared repository,
+                where one party is working on an old version of the code that has been updated.
+            </p>
+            <ol>
+                <li>
+                    Ensure you and your collaborator are both looking at the latest version of your workspace.
+                </li>
+                <li>
+                    Change the following piece of text to your name ***JACK***
+                </li>
+                <li>
+                    Commit and sync your changes. Your collaborator should <strong>not yet sync</strong>
+                </li>
+                <li>
+                   Ask your collaborator to change the text to her name. Then try to commit and sync
+                </li>
+            </ol>
+        </div>
+        <div class="col-md-5 pull-md-7">
+            <img class="featurette-image img-fluid mx-auto" src="images/syncConflict.png"
+                 alt="Sync Conflict in GitHub" style="width: 500px;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 push-md-5">
+            <h2 class="featurette-heading">Fix a conflict</h2>
+            <p class="lead">
+                Whoever is last to sync for a conflict has to fix it, unfortunately!
+            </p>
+            <ol>
+                <li>
+                    The conflicts will have lines around them like this &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; And the two
+                    versions will be separated with marks like this ========.
+                </li>
+                <li>
+                    Choose which version you want to keep and delete the other lines
+                </li>
+                <li>
+                    Edit the lines if necessary.
+                </li>
+                <li>
+                    Remove the lines with arrows &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; and ===========.
+                </li>
+                <li>
+                    Add and then commit and push the changes.
+                </li>
+            </ol>
+        </div>
+        <div class="col-md-5 pull-md-7">
+            <img class="featurette-image img-fluid mx-auto" src="images/resolveMerge.png"
+                 alt="Resolving a merge in GitHub" style="width: 500px;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>Octocat, GitHub and all associated logs are property of GitHub, Inc.</p>
+    </footer>
+
+</div>
+
+
+</body>
+</html>

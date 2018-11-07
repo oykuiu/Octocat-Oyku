@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create a Repository</title>
+    <link rel="icon" href="images/daftpunktocat-guy.gif">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">About Github</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">The Octocat</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Exercise 1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="undoChanges.html">Exercise 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="collaborate.html">Exercise 3</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container marketing">
+
+    <div class="jumbotron">
+        <h1>Create a Local Repository</h1>
+        <p class="lead">In this exercise you're going to create your own repository on GitHub. We'll be using these files
+        to create your first project.</p>
+    </div>
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Create an empty repository</h2>
+            <p class="lead">
+                First thing's first; we need to create an empty repository so we can start work on our
+                project. In this step we're going to use GitHub Desktop to create an empty repository and a workspace,
+                and make sure we can find the workspace on our computer.
+            </p>
+            <ol>
+                <li>In your GitHub Desktop app click on <em>File</em> -> <em>New Repository...</em></li>
+                <li>
+                    On the =<em>create</em> tab type a name for your repository (note you name has to have a hyphen
+                    instead of spaces (e.g. <strong>cfg-project-1</strong>). Before you press <em>create repository</em>
+                    make a note of the <strong>local path</strong> as this shows where to find the code folder on your
+                    computer.
+                </li>
+                <li>
+                    When you're happy, click on <em>Create Repository</em>. Then find and open the code folder on your
+                    computer. You're new repository is ready to go!
+                </li>
+            </ol>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="images/createRepo.png" alt="The Create Repository Screen" style="width: 500px;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 push-md-5">
+            <h2 class="featurette-heading">Add files to the workspace</h2>
+            <p class="lead">
+                Great! You've created a new workspace on your local machine. But we haven't done anything with it yet.
+                In this step we're going to add some files into our workspace and commit them.
+            </p>
+           <ol>
+               <li>
+                   Open up this website's root folder in Finder / File Explorer and copy all of the files into
+                   the new folder you just created (it should be at <strong>local path</strong> from the last step
+               </li>
+               <li>
+                   Open up your GitHub Desktop application. You should see a list of all of the new files you have copied
+                   in. We're going to <strong>commit</strong> (finalize) these changes, now. Make sure the checkbox to
+                   the left of each file is ticked.
+               </li>
+               <li>
+                   Fill out a very short description (max 72 characters) of what you've just done in the textbox called
+                   <em>Summary</em>. You need to do this every time you commit files.
+               </li>
+               <li>
+                   It's good practice to fill out the <em>Description</em> textbox, too. The description can be as long
+                   as you like so you can use it when the summary doesn't give you enough space.
+               </li>
+               <li>
+                   When you're happy with the description and summary click the button labelled <em>commit to
+                   master</em>. You've now saved your commit **locally** (only on your computer)
+               </li>
+           </ol>
+        </div>
+        <div class="col-md-5 pull-md-7">
+            <img class="featurette-image img-fluid mx-auto" src="images/commit.png"
+                 alt="Creating a commit from GitHub Desktop" style="width: 500px;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Push your Changes</h2>
+            <p class="lead">
+                Now you've committed your files, but you haven't sent them up to the cloud yet. The final step is to
+                publish (or <strong>push</strong> your changes so they're there for all the world to see!
+            </p>
+            <ol>
+                <li>
+                    In order to make sure everyone can see your changes we need to *publish* (or *push*) our commit. Once
+                    you've committed your changes, you should see a button at the top of the GitHub client Window saying
+                    <strong>push origin</strong>.]
+                </li>
+                <li>
+                    To make sure your changes have been published, check that the button you have just clicked has changed
+                    to say <strong>Fetch origin</strong>. This means there's nothing else to push.
+                </li>
+                <li>
+                    Congratulations! You've just published your first commit! Log in to GitHub using your web browser and
+                    make sure you can see your repository online.
+                </li>
+            </ol>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="images/viewRepository.png" alt="Viewing your Repository online" style="width: 500px;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>Octocat, GitHub and all associated logs are property of GitHub, Inc.</p>
+    </footer>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Undo Changes</title>
+    <link rel="icon" href="images/daftpunktocat-guy.gif">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">About Github</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">The Octocat</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="createRepository.html">Exercise 1</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Exercise 2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="collaborate.html">Exercise 3</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container marketing">
+
+    <div class="jumbotron">
+        <h1>Undo and Revert Commits</h1>
+        <p class="lead">In this exercise you're going to see how to undo and revert commits in GitHub</p>
+    </div>
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Undo a commit</h2>
+            <p class="lead">
+                If you commit your changes locally and realise that you want to undo them <strong>before</strong>
+                you push it to the remote server, you can <em>undo</em> your commit. This gets rid of the commit as if
+                it never happened.
+            </p>
+            <ol>
+                <li>
+                    Look for the &lt;title&gt; element on this page (use ctrl-F or cmd-F to help you find it).
+                </li>
+                <li>
+                    Change the title to your name
+                </li>
+                <li>
+                    Open up GitHub Desktop and make sure you're looking at the <strong>changes</strong> tab.
+                </li>
+                <li>
+                    Add a commit message and click commit <strong>(Do not push to the server yet)</strong>
+                </li>
+                <li>
+                    Click on the Undo button at the bottom of the screen.
+                </li>
+                <li>
+                    The commit is removed and the changes show up in the file list again.
+                </li>
+                <li>
+                    If you want to undo the changes entirely, right-click on the file and select
+                    <em>Discard changes...</em>
+                </li>
+            </ol>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="images/undoCommit.png" alt="The Create Repository Screen" style="width: 500px;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 push-md-5">
+            <h2 class="featurette-heading">Revert a commit</h2>
+            <p class="lead">
+                If you have already pushed your changes to the server you can't undo your commit any more. You need to
+                create a <strong>revert</strong>. In this exercise we'll look at how to do both of these.
+            </p>
+            <ol>
+                <li>Add an &lt;li&gt; tag to the nav at the top of this page. Make it a link which shows your name as
+                    the text and links back to "index.html"</li>
+                <li>
+                    Remove the &lt;li&gt; tag containing the text <strong>example 1</strong> from the
+                    createRepository.html page
+                </li>
+                <li>
+                    Create a new file called <strong>extra.html</strong> and save it in the root folder of the website
+                </li>
+                <li>
+                    Delete the index.html file
+                </li>
+                <li>
+                    Commit the changes and publish them to the server
+                </li>
+                <li>
+                    Open up the history tab and find your commit in the list. Right click and select <em>Revert this
+                    Commit</em>
+                </li>
+                <li>
+                    A new commit should appear in the history list, cancelling out the commit you just made.
+                    Check that all the changes mirror each other.
+                </li>
+            </ol>
+        </div>
+        <div class="col-md-5 pull-md-7">
+            <img class="featurette-image img-fluid mx-auto" src="images/revertCommit.png"
+                 alt="Creating a commit from GitHub Desktop" style="width: 500px;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>Octocat, GitHub and all associated logs are property of GitHub, Inc.</p>
+    </footer>
+
+</div>
+
+
+</body>
+</html>
